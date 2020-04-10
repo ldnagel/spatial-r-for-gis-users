@@ -1,10 +1,32 @@
 # #maptimeDavis Presents: Spatial R for GIS Users
 
+## Housekeeping
+
+* Link to livecode is <here>
+* Download data <here> 
+* <link to some page with all of the things to do beforehand>
+
+
+
+## Why use R for GIS?
+
+* Open source
+* Reproducibility
+* Scripting
+* With packages, you can do...just about anything
+
+
+## Spatial Packages
 
 
 
 
+<img src="https://github.com/allisonhorst/stats-illustrations/blob/master/rstats-artwork/sf.png" 
+	title="Artwork by @allison_horst" width="500" />
 
+
+
+Artwork by [@allison_horst](https://github.com/allisonhorst)
 
 
 
