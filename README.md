@@ -23,9 +23,12 @@
 
 ### Spatial R Resources
 
-* [Geocomputation with R](geocompr.robinlovelace.net), Lovelace et al 2019: Online book aimed at GIS users wanting to use R and vice versa
+* [Geocomputation with R](geocompr.robinlovelace.net), Lovelace et al 2020: Aimed at GIS users wanting to use R and vice versa
+* [Using Spatial Data with R](https://cengel.github.io/R-spatial/intro.html), Engel 2019: Overview of spatial concepts using both `sf` and `sp` package systems
 * [Tutorial](https://ryanpeek.org/mapping-in-R-workshop/vig_workflow_in_R_snowdata.html#spatial_data_and_r) using the `sf` package system
-* [Tutorials](Rspatial.org) for spatial operations the `sp` package system, especially the raster package 
+* [Tutorials](Rspatial.org) for spatial operations the `sp` package system, especially the `raster` package 
+
+<add more?>
 
 ### Getting Help in R and/or with Spatial Issues
 
