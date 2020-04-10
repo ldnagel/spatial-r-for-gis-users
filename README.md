@@ -1,4 +1,4 @@
-# Spatial R for GIS Users
+# #maptimeDavis Presents: Spatial R for GIS Users
 
 
 
@@ -18,8 +18,7 @@
 * Detailed walkthrough: https://rspatial.org/pdf/Rintro.pdf
 * Online book: [R for Data Science](http://r4ds.had.co.nz/), Grolemund and Wickham 2016
 * Interactive tutorial: DataCamp’s [Introduction to R](https://www.datacamp.com/courses/free-introduction-to-r)
-* [Davis R Users Group](http://d-rug.github.io/getting-started.html)
-  * [D-RUG Webinar Archive](http://d-rug.github.io/pastpresentations/): a mix of intro concepts and advanced topics
+* Check out the Davis R Users Group (D-RUG) for [more resource links](http://d-rug.github.io/getting-started.html) and a [webinar archive](http://d-rug.github.io/pastpresentations/) ranging from intro concepts to advanced topics
 
 ### Spatial R Resources
 
@@ -32,8 +31,9 @@
 
 ### Getting Help in R and/or with Spatial Issues
 
-* Google is a good first stop to see if anyone else has had your specific problem (will pull up Stack Overflow and other forums
-* Davis R Users Group has a discourse website where you can ask questions to the community: https://d-rug.discourse.group/, as well 
+* Google is a great first stop--there are a lot of forum archives and blog posts that have active R and GIS communities
+* [Ask the D-RUG community](https://d-rug.discourse.group/)
 * [DataLab](https://datalab.ucdavis.edu/) offers (virtual) drop-in hours Mondays 1:30-3pm PST
-* #maptimeDavis biweekly (virtual) discussion group ([Spatial Sciences Research Cluster](https://datalab.ucdavis.edu/spatial-sciences/))
+* [Spatial Sciences Research Cluster](https://datalab.ucdavis.edu/spatial-sciences/): #maptimeDavis biweekly (virtual) discussion group
+* UCD Spatial listserv
 
