@@ -13,7 +13,7 @@
 * Open source
 * Reproducibility
 * Scripting
-* With packages, you can do...just about anything
+* With packages, you can do...[just about anything you can think of](https://cran.r-project.org/web/views/Spatial.html)
 
 
 ## Spatial Packages
