@@ -34,6 +34,6 @@
 
 * Google is a good first stop to see if anyone else has had your specific problem (will pull up Stack Overflow and other forums
 * Davis R Users Group has a discourse website where you can ask questions to the community: https://d-rug.discourse.group/, as well 
-* [DataLab office hours](https://datalab.ucdavis.edu/)
-* #maptimeDavis biweekly discussion group ([Spatial Sciences Research Cluster](https://datalab.ucdavis.edu/spatial-sciences/))
+* [DataLab](https://datalab.ucdavis.edu/) offers (virtual) office hours Mondays 1:30-3pm PST
+* #maptimeDavis biweekly (virtual) discussion group ([Spatial Sciences Research Cluster](https://datalab.ucdavis.edu/spatial-sciences/))
 
