@@ -57,5 +57,5 @@ Artwork by [@allison_horst](https://github.com/allisonhorst)
 * [Ask the D-RUG community](https://d-rug.discourse.group/)
 * [DataLab](https://datalab.ucdavis.edu/) offers (virtual) drop-in hours Mondays 1:30-3pm PST
 * [Spatial Sciences Research Cluster](https://datalab.ucdavis.edu/spatial-sciences/): #maptimeDavis biweekly (virtual) discussion group
-* UCD Spatial listserv
+* UCD [geospatial listserv](https://lists.ucdavis.edu/sympa/info/geospatial)
 
