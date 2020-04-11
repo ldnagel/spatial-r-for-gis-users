@@ -53,7 +53,7 @@ Artwork by [@allison_horst](https://github.com/allisonhorst)
 
 ### Getting Help in R and/or with Spatial Issues
 
-* Google is a great first stop--there are a lot of forum archives and blog posts that have active R and GIS communities
+* Your favorite search engine is the best place to start--odds are good someone has had a similar issue, and it's often the easiest way to find information from forum archives such as [Stack Overflow](https://stackoverflow.com/search?q=%23R+%23spatial) or [blog](https://www.r-bloggers.com/) [posts](https://community.rstudio.com/categories)
 * [Ask the D-RUG community](https://d-rug.discourse.group/)
 * [DataLab](https://datalab.ucdavis.edu/) offers (virtual) drop-in hours Mondays 1:30-3pm PST
 * [Spatial Sciences Research Cluster](https://datalab.ucdavis.edu/spatial-sciences/): #maptimeDavis biweekly (virtual) discussion group
