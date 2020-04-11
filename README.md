@@ -16,7 +16,47 @@
 * With packages, you can do...[just about anything you can think of](https://cran.r-project.org/web/views/Spatial.html)
 
 
-## Spatial Packages
+### What (spatial things) can you do with R?
+
+* Import and export spatial data
+  * Common open source and proprietary formats (GeoJSON, ESRI shapefiles, etc)
+  * Can handle a variety of projection formats (WKT, CRS, etc)
+
+*  Interface directly with other programs 
+  * PostGIS, QGIS
+
+* Access spatial data in an efficient way
+  * Directly access certain public datasets without going through not especially user-friendly portals (census data using tidycensus, National Hydrography Dataset using nhdplusTools, etc)
+
+* Simple spatial functions
+  * Intersect, buffer, extract 
+
+* Advanced spatial analyses
+  * Point pattern analysis 
+  * Interpolation, cluster analysis, spatial autocorrelation tests, etc
+  * Landscape metrics (FRAGSTATS)
+  * Distribution modeling—puts spatial functions (extract raster data to points) and modeling (regression, Random Forest, etc) in one program
+
+* Geometry cleaning 
+  * e.g. detecting and fixing invalid geometries
+
+* Mapping 
+  * Generic and advanced functions used to produce figures in R can handle spatial data 
+  * Packages designed to publication-friendly maps (tmap)
+  * Interactive mapping: increasingly user-friendly packages to produce interactive maps ranging from quick views for data exploration to  complex, multi-layer maps built using R syntax (wrappers for leaflet, etc)
+  * Digitization (mapedit provides an R shiny widget based on leaflet for editing or creating sf geometries) 
+
+
+
+### Spatial Package Systems
+•	sp: Spatial*Features (Spatial Points, Spatial Lines, etc)
+o	Original system, <expand>
+o	Structure (put in a picture)
+
+•	sf: simple features 
+o	OGC Simple Feature standard
+o	Structure: focused around data frames
+
 
 
 
