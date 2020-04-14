@@ -4,9 +4,9 @@
 1.	Go to the [R-Project website](https://www.r-project.org/)
 2.	On the left, click the “CRAN” link below “Download”
 3.	Click on the link to the CRAN mirror closest to you (e.g. Oregon State if you’re in CA)
-4.	Choose the correct “Download R for…” option from the top (Mac or Windows), then:
-a.	For Mac users, select the appropriate version for your operating system (e.g. if the latest release is version 3.6.3, click the link that looks like R-3.6.3.pkg), then choose to Save or Open
-b.	For PC users, choose “Install R for the first time” (next to the base subdirectory) and then “Download R 3.6.3 for Windows” at the top of the page
+4.	Choose the correct “Download R for…” option from the top (Mac or Windows)
+    * For Mac users, select the appropriate version for your operating system (e.g. if the latest release is version 3.6.3, click the appropriate .pkg link that includes R-3.6.3), then choose to Save or Open
+    *	For PC users, choose “Install R for the first time” (next to the base subdirectory) and then “Download R 3.6.3 for Windows” at the top of the page
 5.	Save the pkg or exe file, open it once it downloads, agree to license, and install like you would any other software
 
 ## To install RStudio (AFTER you have installed R):
