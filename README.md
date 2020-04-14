@@ -51,14 +51,17 @@
 
 For a more detailed list (specific packages included): https://cran.r-project.org/web/views/Spatial.html
 
-### Spatial Package Systems
-•	sp: Spatial*Features (Spatial Points, Spatial Lines, etc)
-o	Original system, <expand>
-o	Structure (put in a picture)
+## Spatial Package Systems in R
 
-•	sf: simple features 
-o	OGC Simple Feature standard
-o	Structure: focused around data frames
+Two core spatial packages in R:
+
+* sp: Spatial\*Features (Spatial Points, Spatial Lines, etc)
+  * Original system, <expand>
+  * Structure (put in a picture)
+
+* sf: simple features 
+  * OGC Simple Feature standard
+  * Structure: focused around data frames
 
 
 <img src="https://github.com/allisonhorst/stats-illustrations/blob/master/rstats-artwork/sf.png" 
