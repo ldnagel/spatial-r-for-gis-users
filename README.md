@@ -2,11 +2,11 @@
 
 # #maptimeDavis Presents: Spatial R for GIS Users
 
-## Housekeeping
+## Getting Started
 
+* To install R and RStudio, go [here](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/Install-R-RStudio.md)
 * Link to livecode is <here>
 * Download data <here> 
-* <link to some page with all of the things to do beforehand>
 
 
 
