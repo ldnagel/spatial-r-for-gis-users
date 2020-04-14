@@ -4,9 +4,12 @@
 
 ## Getting Started
 
-* To install R and RStudio, go [here](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/Install-R-RStudio.md)
-* Link to livecode is <here>
-* Download data <here> 
+* Make sure that you have up-to-date versions of R and RStudio. For instructions on how to install R and RStudio for the first time, go [here](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/Install-R-RStudio.md)
+* Check your package versions: there have been some recent major overhauls of core spatial packages and some of the packages they depend on. [Here's a list of the package versions used in this workshop](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/r-packages.md) and some package installation tips, we highly recommend installing these versions ahead of time to minimize troubleshooting during the workshop. 
+* Data can be downloaded [in a zip file from this repo](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/data) or in [box]
+* The link to the livecode is here
+  * If it's lagging behind the screenshare: try to refresh the page, and if that doesn't work message the chat and someone will remind the presenter to save the code so the page updates
+
 
 
 
