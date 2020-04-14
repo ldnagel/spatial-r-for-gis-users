@@ -17,8 +17,7 @@
 
 * Open source
 * Reproducibility
-* Scripting
-* With packages, you can do...[just about anything you can think of](https://cran.r-project.org/web/views/Spatial.html)
+* Scripting: automate repeated tasks
 
 
 ### What (spatial things) can you do with R?
@@ -50,7 +49,7 @@
   * Interactive mapping: increasingly user-friendly packages to produce interactive maps ranging from quick views for data exploration to  complex, multi-layer maps built using R syntax (wrappers for leaflet, etc)
   * Digitization (mapedit provides an R shiny widget based on leaflet for editing or creating sf geometries) 
 
-
+For a more detailed list (specific packages included): https://cran.r-project.org/web/views/Spatial.html
 
 ### Spatial Package Systems
 •	sp: Spatial*Features (Spatial Points, Spatial Lines, etc)
@@ -62,19 +61,10 @@ o	OGC Simple Feature standard
 o	Structure: focused around data frames
 
 
-
-
-
 <img src="https://github.com/allisonhorst/stats-illustrations/blob/master/rstats-artwork/sf.png" 
 	title="Artwork by @allison_horst" width="500" />
 
-
-
 Artwork by [@allisonhorst](https://github.com/allisonhorst)
-
-
-
-
 
 
 ## Resources
@@ -93,7 +83,6 @@ Artwork by [@allisonhorst](https://github.com/allisonhorst)
 * [Tutorial](https://ryanpeek.org/mapping-in-R-workshop/vig_workflow_in_R_snowdata.html#spatial_data_and_r) using the `sf` package system
 * [Tutorials](Rspatial.org) for spatial operations the `sp` package system, especially the `raster` package 
 
-<add more?>
 
 ### Getting Help in R and/or with Spatial Issues
 
