@@ -3,42 +3,63 @@
 
 # This is the script pane
 
+
 # To run code: 
-#    1) Copy and paste code into the console (below by default), hit enter
+#    1) Copy and paste code into the console (the pane below this one) next to the blue ">" sign, hit enter
+#                                OR
 #    2) Highlight the code you want to run and hit ctrl + enter
+
 
 
 # Comments
 # Putting "#" in a row will convert everything after it into a comment 
-x <- 3     # Everything to the left of the pound sign will run in the console, but this text won't
+x <- 3     # If you run this whole line, everything to the left of the pound sign will run in the console, but this text won't
 
 
 # R Building Blocks ------------------------------------------------------------------
 
-# Objects
-x <- 3       # Create object x: Assign the value 3 to x using "<-"
-y <- 4       # Assign the value 4 to the object y
-x + y
-x+y        # R is not whitespace sensitive
-X + y      # R is case sensitive
+##### Objects
 
-a <- c(2, 4)      # Make a vector (1 dimensional, like a python array (?))
-b <- c(8,16)
+# Create object x: Assign the value 3 to x using "<-"
+x <- 3 
+
+# Examine your object
+x
+
+# Assign the value 4 to the object y
+y <- 4 
+y
+
+# Do math with objects
+x + y
+x+y          # R is not whitespace sensitive
+X + y        # R is case sensitive
+
+
+# More objects: make a vector (1 dimensional series)
+a <- c(2, 4)      
+b <- c(8,16)   
+
+# Examine (print) your objects
 a
 b
+
+# Math with vectors
 a+b
 a+x
 
-#Functions
-sqrt(b)      #some functions are built in
+###Functions: function()
 
-read_csv()    # some functions come from packages (although this one is based on a base R fn)
-?read_csv     # one of your best friends in figuring out how to use built in functions
+# Run a built-in function
+sqrt(b)      #some functions are included in base R, some are built into packages
+
+# ?function: Getting help with functions (usage, what inputs are needed, what the default behavior is, etc)
+?sqrt     # one of your best friends in figuring out how to use built in functions
 
 
 # Data frames = tables ------------------------------------------
 
-# Make a mini dataframe (a plain table)
+# Make a mini dataframe (table)
 df <- data.frame(ID = c(101,102,103), 
                  area = c(22.3, 54, 0.01), 
                  confidence = c("High", "Low", "High"),
@@ -102,18 +123,7 @@ df$confidence
 
 
 # Subsetting data frames
-df_high1 <- df[which(df$confidence == "High"),]    # Create new df: subest in base R
-df_high1
-
-df_high2 <- df %>% filter(confidence == "High")    # Create new df: Tidyverse syntax
-
-# Tidyverse syntax (using the %>% pipes) lets you do multiple things in one code block
-df %>%                                             
-  filter(confidence == "High") %>% 
-  arrange(area)
-
-
-
-
+df_high <- df[which(df$confidence == "High"),]    # Create new df: subest in base R
+df_high
 
 
