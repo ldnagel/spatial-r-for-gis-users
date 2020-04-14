@@ -1,3 +1,5 @@
+# Under construction, excuse the mess
+
 # #maptimeDavis Presents: Spatial R for GIS Users
 
 ## Housekeeping
@@ -22,8 +24,7 @@
   * Common open source and proprietary formats (GeoJSON, ESRI shapefiles, etc)
   * Can handle a variety of projection formats (WKT, CRS, etc)
 
-*  Interface directly with other programs 
-  * PostGIS, QGIS
+*  Interface directly with other programs (e.g. PostGIS, QGIS)
 
 * Access spatial data in an efficient way
   * Directly access certain public datasets without going through not especially user-friendly portals (census data using tidycensus, National Hydrography Dataset using nhdplusTools, etc)
@@ -66,7 +67,7 @@ o	Structure: focused around data frames
 
 
 
-Artwork by [@allison_horst](https://github.com/allisonhorst)
+Artwork by [@allisonhorst](https://github.com/allisonhorst)
 
 
 
