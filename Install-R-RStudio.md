@@ -19,6 +19,4 @@ Make sure you’re running RStudio (logo is white R inside of a blue circle) rat
 
 You can run code directly in the console, or you can run code from scripts (text files that you can save so you can reproduce your work later). To make a new script in R, click on the white square with a green plus sign (upper left hand corner) and click R Script. To load a script saved on your computer, click the Folder icon in the toolbar at the top of the window or click File -> Open File. Navigate to the script location and click Open. 
 
-Download this [sample script] (from box) to a folder on your computer and open it using the process above for a very basic introduction to R commands. 
-
-Alternatively, copy and paste the text from [this script on github](https://github.com/ldnagel/spatial-r-for-gis-users/blob/a3e0ecea3a0826a1ecf3d3fe69cfef55b9d56f95/scripts/r-basics-code.R) to a new R script. Save that R script (click the blue floppy disk icon) to a folder on your computer before running through the code.
+Download this [sample script] (from box) to a folder on your computer and open it using the process above for a very basic introduction to R commands. Alternatively, copy and paste the text from [this script on github](https://github.com/ldnagel/spatial-r-for-gis-users/blob/a3e0ecea3a0826a1ecf3d3fe69cfef55b9d56f95/scripts/r-basics-code.R) to a new R script. Save that R script (click the blue floppy disk icon) to a folder on your computer before running through the code.
