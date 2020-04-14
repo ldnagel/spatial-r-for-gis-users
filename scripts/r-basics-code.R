@@ -1,7 +1,7 @@
 
 # R Studio anatomy and script basics ----------------------------------------
 
-# This is the script pane
+# This text is in the script pane
 
 
 # To run code: 
