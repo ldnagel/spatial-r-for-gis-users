@@ -7,7 +7,9 @@
 # To run code: 
 #    1) Copy and paste code into the console (the pane below this one) next to the blue ">" sign, hit enter
 #                                OR
-#    2) Highlight the code you want to run and hit ctrl + enter
+#    2) Put your cursor in the line of code you want to run and hit ctrl + enter (control key followed by enter)
+#                                OR
+#    3) Highlight the code you want to run (part of a line, multiple lines, etc) and hit ctrl + enter
 
 
 
