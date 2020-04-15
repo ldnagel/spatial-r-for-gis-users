@@ -3,7 +3,11 @@
 ### Make sure that you have up-to-date versions of R (≥ 3.3.0) and RStudio
 
   * For instructions on how to install R and RStudio for the first time, go [here](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/getting_started/Install-R-RStudio.md).
-  * For instructions on how to update your R version and migrate your packages:
+  * For tips on how to update your R version and migrate your packages without having to re-install them all manually:
+    * [Blog post](https://www.datascienceriot.com//r/upgrade-R-packages/) with sample code snippits, [this post](https://www.r-bloggers.com/updating-r/) has extra details if you have a lot of packages that aren't on CRAN
+    * [This blog post](https://www.r-bloggers.com/a-step-by-step-screenshots-tutorial-for-upgrading-r-on-windows/) runs through how to use a package that automates the process for Windows
+    * [This package](https://github.com/AndreaCirilloAC/updateR) automates the process on a Mac
+    
 
 ### Check your package versions
 
