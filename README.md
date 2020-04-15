@@ -72,6 +72,7 @@ Two core spatial packages in R:
 
 Artwork by [@allisonhorst](https://github.com/allisonhorst)
 
+A history of GIS in R through 2017: https://edzer.github.io/UseR2017/#a-short-history-of-handling-spatial-data-in-r
 
 ## Resources
 
