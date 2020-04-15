@@ -42,7 +42,7 @@
   * Distribution modeling—puts spatial functions (extract raster data to points) and modeling (regression, Random Forest, etc) in one program
 
 * Geometry cleaning 
-  * e.g. detecting and fixing invalid geometries
+  * Detecting and fixing invalid geometries
 
 * Mapping 
   * Generic and advanced functions used to produce figures in R can handle spatial data 
@@ -56,12 +56,12 @@ For a more detailed list (specific packages included): https://cran.r-project.or
 
 Two core spatial packages in R:
 
-* sp: Spatial\*Features (Spatial Points, Spatial Lines, etc)
+* `sp`: Spatial\*Features (Spatial Points, Spatial Lines, etc)
   * Original framework for handling spatial data in R (first version released in 2004)
   * Most packages for analyzing and mapping spatial data built before 2016 depend on this package
   * Data structure can make it complicated to access attribute data for analysis spatial data
 
-* sf: simple features 
+* `sf`: simple features 
   * New framework for handling spatial data in R (first released in 2016, intended to eventually replace sp)
   * Adheres to [Open Geospatial Consortium](https://www.osgeo.org/partners/ogc/) Simple Features standard
   * Vector data structure focused around data frames (more intuitive for users familiar with common data manipulation workflows in R)
