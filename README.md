@@ -26,10 +26,11 @@
   * Common open source and proprietary formats (GeoJSON, ESRI shapefiles, etc)
   * Can handle a variety of projection formats (WKT, CRS, etc)
 
-*  Interface directly with other programs (e.g. PostGIS, QGIS)
+* Interface directly with other programs
+  * PostGIS, QGIS, others
 
 * Access spatial data in an efficient way
-  * Directly access certain public datasets without going through not especially user-friendly portals (census data using tidycensus, National Hydrography Dataset using nhdplusTools, etc)
+  * Directly access certain public datasets without going through not especially user-friendly portals (census data using `tidycensus`, National Hydrography Dataset using `nhdplusTools`, etc)
 
 * Simple spatial functions
   * Intersect, buffer, extract 
@@ -37,7 +38,7 @@
 * Advanced spatial analyses
   * Point pattern analysis 
   * Interpolation, cluster analysis, spatial autocorrelation tests, etc
-  * Landscape metrics (FRAGSTATS)
+  * Landscape metrics (FRAGSTATS-type functionality)
   * Distribution modeling—puts spatial functions (extract raster data to points) and modeling (regression, Random Forest, etc) in one program
 
 * Geometry cleaning 
@@ -45,9 +46,9 @@
 
 * Mapping 
   * Generic and advanced functions used to produce figures in R can handle spatial data 
-  * Packages designed to publication-friendly maps (tmap)
+  * Packages designed to publication-friendly maps
   * Interactive mapping: increasingly user-friendly packages to produce interactive maps ranging from quick views for data exploration to  complex, multi-layer maps built using R syntax (wrappers for leaflet, etc)
-  * Digitization (mapedit provides an R shiny widget based on leaflet for editing or creating sf geometries) 
+  * Digitization 
 
 For a more detailed list (specific packages included): https://cran.r-project.org/web/views/Spatial.html
 
@@ -56,12 +57,14 @@ For a more detailed list (specific packages included): https://cran.r-project.or
 Two core spatial packages in R:
 
 * sp: Spatial\*Features (Spatial Points, Spatial Lines, etc)
-  * Original system, <expand>
-  * Structure (put in a picture)
+  * Original framework for handling spatial data in R (first version released in 2004)
+  * Most packages for analyzing and mapping spatial data built before 2016 depend on this package
+  * Data structure can make it complicated to access attribute data for analysis spatial data
 
 * sf: simple features 
-  * OGC Simple Feature standard
-  * Structure: focused around data frames
+  * New framework for handling spatial data in R (first released in 2016, intended to eventually replace sp)
+  * Adheres to [Open Geospatial Consortium](https://www.osgeo.org/partners/ogc/) Simple Features standard
+  * Vector data structure focused around data frames (more intuitive for users familiar with common data manipulation workflows in R)
 
 
 <img src="https://github.com/allisonhorst/stats-illustrations/blob/master/rstats-artwork/sf.png" 
