@@ -1,5 +1,3 @@
-
-
 ## To install R:
 1.	Go to the [R-Project website](https://www.r-project.org/)
 2.	On the left, click the “CRAN” link below “Download”
