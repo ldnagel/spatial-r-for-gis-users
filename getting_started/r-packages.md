@@ -15,6 +15,8 @@
 
   * In the console (default location is lower left corner): type install.packages("package_name")
  
+ ![New RStudio window](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/getting_started/img/RStudio_install_pkg_code.PNG)
+
  OR
  
   * In the Packages tab (default location is lower right quadrant of RStudio): 
@@ -22,8 +24,10 @@
     * Type package name(s) in the box
     * Install to Library (leave the [Default] path in place if you've never done this before)
     * Leave Install dependencies checked
-  
-If packages have installed correctly, the text "package 'package-name' successfully unpacked and MD5 sums checked" and R will tell you where it put the downloaded binary packages
+
+![New RStudio window](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/getting_started/img/RStudio_install_pkg_gui.PNG)
+
+If packages have installed correctly, the text "package 'package-name' successfully unpacked and MD5 sums checked" will display in the console along with the filepath to where R put the downloaded binary packages.
 
 
 ## Notes/Disclaimer on Workshop Timing
