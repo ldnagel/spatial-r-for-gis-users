@@ -94,7 +94,7 @@ A history of GIS in R through 2017: https://edzer.github.io/UseR2017/#a-short-hi
 
 * Your favorite search engine is the best place to start--odds are good someone has had a similar issue, and it's often the easiest way to find information from forum archives such as [Stack Overflow](https://stackoverflow.com/search?q=%23R+%23spatial) or [blog](https://www.r-bloggers.com/) [posts](https://community.rstudio.com/categories)
 * [Ask the D-RUG community](https://d-rug.discourse.group/)
-* Spatial Sciences Research Cluster: [#maptimeDavis](https://datalab.ucdavis.edu/spatial-sciences/) biweekly (virtual) discussion group
+* Spatial Sciences Research Cluster: come to the [#maptimeDavis](https://datalab.ucdavis.edu/spatial-sciences/) biweekly (virtual) discussion group
 * [DataLab](https://datalab.ucdavis.edu/office-hours/) offers (virtual) drop-in hours Mondays 1:30-3pm PST
 * UCD [geospatial listserv](https://lists.ucdavis.edu/sympa/info/geospatial)
 
