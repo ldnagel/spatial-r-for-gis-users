@@ -4,9 +4,9 @@
 
   * For instructions on how to install R and RStudio for the first time, go [here](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/getting_started/Install-R-RStudio.md).
   * For tips on how to update your R version and migrate your packages without having to re-install them all manually:
-    * [This blog post](https://www.r-bloggers.com/a-step-by-step-screenshots-tutorial-for-upgrading-r-on-windows/) runs through how to use a package that automates the process for Windows
-    * [This package](https://github.com/AndreaCirilloAC/updateR) automates the process on a Mac (scroll down to the Readme section for code you can copy/paste)
-    * [This blog post](https://www.datascienceriot.com//r/upgrade-R-packages/) goes through a manual workflow that [this post](https://www.r-bloggers.com/updating-r/) expands on (extra details on what to do if you have a lot of packages that aren't on CRAN)
+    * On Windows: [this blog post](https://www.r-bloggers.com/a-step-by-step-screenshots-tutorial-for-upgrading-r-on-windows/) runs through how to use a package that automates the process
+    * On a Mac: [this package](https://github.com/AndreaCirilloAC/updateR) automates the process (scroll down to the Readme section for code you can copy/paste to install and run the package)
+    * For any system: [this blog post](https://www.datascienceriot.com//r/upgrade-R-packages/) goes through a manual workflow that [this post](https://www.r-bloggers.com/updating-r/) expands on (extra details on what to do if you have a lot of packages that aren't on CRAN)
     
 
 ### Check your package versions
