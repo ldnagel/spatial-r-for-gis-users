@@ -7,6 +7,8 @@
 
 `tidyverse` 1.3.0
 
+`mapview` 2.7.8
+
 `sp` version 1.4-1
 
 `raster` 3.0-12
