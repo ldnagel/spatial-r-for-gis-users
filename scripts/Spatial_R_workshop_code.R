@@ -154,8 +154,10 @@ fpr <- paste0(fp, "/nlcd_developed.tif")            # Raster filepath includes f
 
 # Raster package
 nlcd_dev <- raster(fpr)                               # Load raster to object
-mapview(nlcd_dev)                                     # mapview automatically drops resolution for easy viewing
+mapview(nlcd_dev)                                     # mapview automatically drops resolution for easy viewing...by resampling a binary raster into a not-binary raster
+unique(values(nlcd_dev))                              # But we can check our values and confirm that the raster is binary
 
+plot(nlcd_dev)
 
 # Extract raster to feature: which watershed is the most developed?
 
