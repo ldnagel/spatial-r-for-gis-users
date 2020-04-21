@@ -150,7 +150,7 @@ library(raster)
 
 # Raster filepath setup is different than sf
 fp                                                    # Should point to the data folder
-fpr <- paste0(fp, "/nlcd11_developed.tif")            # Raster filepath includes filename
+fpr <- paste0(fp, "/nlcd_developed.tif")            # Raster filepath includes filename
 
 # Raster package
 nlcd_dev <- raster(fpr)                               # Load raster to object
@@ -195,7 +195,7 @@ ws_inputs <- dplyr::select(ws_dev_sf,                      # our starting object
                            ID,               
                            Area_km2,             
                            Name, 
-                           Dev_pixels = nlcd11_developed)  # you can rename fields in the same step
+                           Dev_pixels = nlcd_developed)  # you can rename fields in the same step
 ws_inputs                                                  #sticky geometry came along for the ride, yay!
 
 ws_inputs$Dev_km2 <- ws_inputs$Dev_pixels * 30^2/1000^2    # Multiply pixel count times pixel size in square km
