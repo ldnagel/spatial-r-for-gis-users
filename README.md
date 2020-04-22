@@ -87,7 +87,6 @@ Artwork by [@allisonhorst](https://github.com/allisonhorst)
 
 * Detailed walkthrough: https://rspatial.org/pdf/Rintro.pdf
 * Online book: [R for Data Science](http://r4ds.had.co.nz/), Grolemund and Wickham 2016
-* Interactive tutorial: DataCamp’s [Introduction to R](https://www.datacamp.com/courses/free-introduction-to-r)
 * Check out the Davis R Users Group (D-RUG) for [more resource links](http://d-rug.github.io/getting-started.html) and a [webinar archive](http://d-rug.github.io/pastpresentations/) ranging from intro concepts to advanced topics
 
 ### Spatial R Resources
