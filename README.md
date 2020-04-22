@@ -73,14 +73,12 @@ Two core spatial packages in R:
   * Adheres to [Open Geospatial Consortium](https://www.osgeo.org/partners/ogc/) Simple Features standard
   * Vector data structure focused around data frames (more intuitive for users familiar with common data manipulation workflows in R)
 
-* More details on the [history of GIS in R](https://edzer.github.io/UseR2017/#a-short-history-of-handling-spatial-data-in-r) (from 2017) 
-
-
 <img src="https://github.com/allisonhorst/stats-illustrations/blob/master/rstats-artwork/sf.png" 
 	title="Artwork by @allison_horst" width="500" />
 
 Artwork by [@allisonhorst](https://github.com/allisonhorst)
 
+* More details on the [history of GIS in R](https://edzer.github.io/UseR2017/#a-short-history-of-handling-spatial-data-in-r) (from 2017) 
 
 
 ## Resources
