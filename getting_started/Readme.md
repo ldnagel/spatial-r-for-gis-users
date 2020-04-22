@@ -17,7 +17,7 @@
   
 ### New to R? 
 
-* Make sure you check out the RStudio Basics section of the [installing R and RStudio] section and run through [this code](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/scripts/r-basics-code.R) in RStudio ahead of time
+* Make sure you check out the RStudio Basics section of the [installing R and RStudio](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/getting_started/Install-R-RStudio.md) section and run through [this code](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/scripts/r-basics-code.R) in RStudio ahead of time
   
 ### Need troubleshooting help? 
  
