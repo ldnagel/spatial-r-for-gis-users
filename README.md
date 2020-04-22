@@ -28,6 +28,8 @@
 
 ### What (spatial things) can you do with R?
 
+CRAN Task Pages: topic-specific [lists of packages](https://cran.r-project.org/web/views/Spatial.html)
+
 * Import and export spatial data
   * Common open source and proprietary formats (GeoJSON, ESRI shapefiles, etc)
   * Can handle a variety of projection formats (WKT, CRS, etc)
@@ -56,7 +58,6 @@
   * Interactive mapping: increasingly user-friendly packages to produce interactive maps ranging from quick views for data exploration to  complex, multi-layer maps built using R syntax (wrappers for leaflet, etc)
   * Digitization 
 
-For a more detailed list (specific packages included): https://cran.r-project.org/web/views/Spatial.html
 
 ## Spatial Package Systems in R
 
