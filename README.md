@@ -28,7 +28,7 @@
 
 ### What (spatial things) can you do with R?
 
-CRAN Task Pages: topic-specific [lists of packages](https://cran.r-project.org/web/views/Spatial.html)
+CRAN Task Pages: topic-specific [lists of packages](https://cran.r-project.org/web/views/Spatial.html). From the Spatial page (condensed):
 
 * Import and export spatial data
   * Common open source and proprietary formats (GeoJSON, ESRI shapefiles, etc)
