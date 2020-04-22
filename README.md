@@ -16,9 +16,14 @@
 ## Why use R for GIS?
 
 * Open source
-* Scripting: automate repeated tasks
-* Reproducibility
-* Integrated workflow if you're already doing non-spatial data analysis in R
+  * Free to use, transferable
+  * Transparent analyses 
+* Scripting
+  * Automate repeated tasks
+  * Increase research reproducibility
+* Integrated workflow 
+  * Similar syntax to other R packages
+  * Keeps all of your spatial and non-spatial analyses in one program/workflow 
 
 
 ### What (spatial things) can you do with R?
