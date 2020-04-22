@@ -14,7 +14,11 @@
 * There have been some recent major overhauls of core spatial packages and some of the packages they depend on. 
 * [Here's a list of the package versions used in this workshop](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/getting_started/r-packages.md) and some package installation tips
   * We highly recommend installing these versions ahead of time (unfortunately, the virtual format of this workshop sharply limits the amount of one-on-one code troubleshooting we can do)
-  
+
+### Slow Internet?
+
+* Download the data ahead of time on [GitHub](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/data) or from [Box](https://ucdavis.box.com/s/gvw5r4jlh5nu21ie4zp5htn8ga5pn53o). Unzip the folder and put the data in a single folder called "data"
+
 ### New to R? 
 
 * Make sure you check out the RStudio Basics section of the [installing R and RStudio](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/getting_started/Install-R-RStudio.md) section and run through [this code](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/scripts/r-basics-code.R) in RStudio ahead of time
