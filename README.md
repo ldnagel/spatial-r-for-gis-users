@@ -1,6 +1,4 @@
-# Under construction, excuse the mess
-
-# #maptimeDavis Presents: Spatial R for GIS Users
+# Spatial R for GIS Users
 
 ## Getting Started
 
