@@ -72,7 +72,7 @@ Two core spatial packages in R:
   * Vector data structure focused around data frames (more intuitive for users familiar with common data manipulation workflows in R)
 
 <img src="https://github.com/allisonhorst/stats-illustrations/blob/master/rstats-artwork/sf.png" 
-	title="Artwork by @AllisonHorst" width="500" />
+	title="Putting this image here both because it is adorable and because it's a great visual of how the sf package handles vectors: an attribute table with geometries (points, polygons, etc) that 'stick' to each row/feature" width="500" />
 
 Artwork by [@allisonhorst](https://github.com/allisonhorst)
 
