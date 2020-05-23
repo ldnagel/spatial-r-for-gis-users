@@ -12,4 +12,4 @@ Download the data
 
 ### Watch the webinar 
 
-[This webinar](https://www.youtube.com/watch?v=vbNS5d3dB6o) was recorded as part of the #MaptimeDavis webinar series hosted by the DataLab at UC Davis
+[This webinar](https://www.youtube.com/watch?v=vbNS5d3dB6o) was recorded as part of the #MaptimeDavis webinar series hosted by the DataLab at UC Davis. Livecode section starts at 23:58.
