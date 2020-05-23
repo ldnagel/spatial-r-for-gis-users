@@ -1,6 +1,8 @@
 
 ## Package versions used in this workshop
 
+R version 3.6 (`sf 0.9-0` requires a minimum of R 3.3.0)
+
 `sf` version 0.9-0 (ignore messages about version 0.9-2 available from source)
 
 `dplyr` version 0.8.5 (1.0.0 not yet out)
