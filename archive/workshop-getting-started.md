@@ -1,3 +1,5 @@
+Setup instructions for live webinar (virtually or in person)
+
 # Spatial R for GIS Users
 
 ## Getting Started
