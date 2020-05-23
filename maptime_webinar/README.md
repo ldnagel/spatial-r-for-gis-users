@@ -8,7 +8,7 @@ Check your R and package versions
 
 Download the data
 * Data can be downloaded [in a zip file from this repo](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/data)
-* The livecode produced during the webinar is [here]() (additional comments added later for clarity)
+* The livecode produced during the webinar is [here](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/scripts/maptime_workshop_code.R) (additional comments added later for clarity)
 
 ### Watch the webinar 
 
