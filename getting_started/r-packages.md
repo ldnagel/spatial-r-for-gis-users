@@ -5,9 +5,10 @@ R version 3.6 (`sf 0.9-0` requires a minimum of R 3.3.0)
 
 `sf` version 0.9-0 (ignore messages about version 0.9-2 available from source)
 
-`dplyr` version 0.8.5 (1.0.0 not yet out)
-
 `tidyverse` 1.3.0
+* `dplyr` version 0.8.5 (1.0.0 not yet out)
+* `readr` 1.3.1 
+* `ggplot2` 3.3.0
 
 `mapview` 2.7.8
 
@@ -20,7 +21,7 @@ R version 3.6 (`sf 0.9-0` requires a minimum of R 3.3.0)
 This workshop is being developed and presented during an odd moment in time in the R world
 1. There is an ongoing major overhaul in the `sf` package (most of the basic functionality is working at this point, but old code using the package or packages that depend on it may break, and not all packages that depend on `sf` have finished updating in response).
 2. The `dplyr` package (very useful for manipulating spatial data based on attributes) is also undergoing a major overhaul, and will be released a few weeks after this workshop (April 2020). This repository may or may not get updated after that release, so if you find this workshop in the future that may or may not be an issue.
-3. R had a major update immediately prior to this workshop; the livecode used version 3.6. The only apparent conflict that arose with 4.0 and the packages mentioned above was with the `tidyverse` package; If you're running 4.0 and getting an error about `xml` when installing `tidyverse`, install `dplyr` version 0.8.5 and `readr` 1.3.1 (and `ggplot2` 3.3.0 for the mapping section). 
+3. R had a major update immediately prior to this workshop; the livecode used version 3.6. The only apparent conflict that arose with 4.0 and the packages mentioned above was with the `tidyverse` package; If you're running 4.0 and an error when installing `tidyverse`, try installing and loading `dplyr`, `readr`, and `ggplot2` individually (note the versions listed above). 
  
 ## Installing packages in R/RStudio
 
