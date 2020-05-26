@@ -13,3 +13,5 @@ Download the data
 ### Watch the webinar 
 
 [This webinar](https://www.youtube.com/watch?v=vbNS5d3dB6o) was recorded as part of the #MaptimeDavis webinar series hosted by the DataLab at UC Davis. Livecode section starts at 23:58.
+
+Bonus: see [this script](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/scripts/bonus-mapping-code.R) for the (very brief) overview of mapping with `ggplot2` and `mapview` that I ran out of time to cover during the workshop. 
