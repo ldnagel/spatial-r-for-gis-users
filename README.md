@@ -2,7 +2,7 @@
 
 ## Tutorials
 
-* Text-based tutorial
+* Text-based tutorial (coming soon)
 * [Tutorial with code and video walkthrough](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/maptime_webinar): Recording of a (virtual) #MaptimeDavis Workshop (April 2020)
 
 ## Why use R for GIS?
@@ -66,9 +66,9 @@ Two core spatial packages in R:
   * Vector data structure focused around data frames (more intuitive for users familiar with common data manipulation workflows in R)
 
 <img src="https://github.com/allisonhorst/stats-illustrations/blob/master/rstats-artwork/sf.png" 
-	title="Putting this image here both because it is adorable and because it's a great visual of how the sf package handles vectors: an attribute table with geometries (points, polygons, etc) that 'stick' to each row/feature" width="500" />
+	title="Illustration entitled 's f: spatial data...simplified' depicting colorful fluffy critters taping shapes to an attribute table into a column labeled 'geometries' (and also onto themselves) with the caption 'sticky geometries, for people who love their maps (and sanity)'" width="500" />
 
-Artwork by [@allisonhorst](https://github.com/allisonhorst)
+A great (and adorable) visual of how the sf package handles vectors: an attribute table with geometries (points, polygons, etc) that 'stick' to each row/feature. Artwork by [@allisonhorst](https://github.com/allisonhorst). 
 
 * More details on the [history of GIS in R](https://edzer.github.io/UseR2017/#a-short-history-of-handling-spatial-data-in-r) (from 2017) 
 
