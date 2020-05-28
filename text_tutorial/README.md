@@ -3,12 +3,12 @@
 * [Setup](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/text_tutorial/README.md#setup)
 * [Working with vector data](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/text_tutorial/README.md#working-with-vector-data)
   - [Import and examine vector layer](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/text_tutorial/README.md#import-and-examine-vector-layer)
-  - [Reproject vector layer](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/text_tutorial/README.md#)
-  - [Explore attribute table](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/text_tutorial/README.md#)
-  - [Quick plots](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/text_tutorial/README.md#)
-  - [Spatial operations](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/text_tutorial/README.md#)
-* [Working with raster data](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/text_tutorial/README.md#)
-  - [Extract](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/text_tutorial/README.md#)
+  - [Reproject vector layer](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial#reproject-vector-layer)
+  - [Explore attribute table](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial#explore-the-attribute-table)
+  - [Quick plots](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial#plot-to-get-a-visual-the-sf-object-baseplot-function)
+  - [Spatial operations](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial#spatial-operations)
+* [Working with raster data](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial#rasters)
+  - [Extract raster to features](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial#extract-raster-to-feature)
 
 ## Setup
 
