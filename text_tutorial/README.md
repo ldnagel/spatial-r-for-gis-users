@@ -1,8 +1,18 @@
 # Under construction, pardon the mess
 
-[TOC]
+* [Setup]()
+* [Working with vector data]()
+  - [Import and examine vector layer]()
+  - [Reproject vector layer]()
+  - [Explore attribute table]()
+  - [Quick plots]()
+  - [Spatial operations]()
+* [Working with raster data]()
+  - [Extract]
 
-## RStudio setup
+## Setup
+
+RStudio setup
 
 * Make a new project in RStudio (select New Project from the File dropdown menu)
 * Make a folder called "data" inside the project folder (using your file explorer)
@@ -10,7 +20,7 @@
   * Once you've downloaded and unzipped the file, copy and paste the files into the "data" folder
 * Open a new script, save it in inside the project folder 
 
-## Script setup
+Script setup
 
 Packages are like plugins--install and load to get increase functionality (or at least more functions). In order to use functions in a package, we need to load the package library
 
@@ -56,7 +66,9 @@ library(mapview)
 * Mapview is great for quick checks of your data (you can pan and zoom like graphical GIS systems/google maps)
 * You can also use it to create customized interactive maps that you can then share/post online
 
-# Import, examine, and reproject vector data 
+# Working with vector data 
+
+## Import and examine vector layer
 
 Use the function `getwd()` to check the default filepath (should be the RStudio project folder)
 
@@ -75,7 +87,7 @@ watersheds <- st_read(dsn = fp, "Tahoe_H12")
 watersheds                                        
 ```
 
-## Exploring simple features (vectors)
+### Exploring simple feature objects (vectors imported using `sf`)
 
 Anatomy of an sf object: 
 
@@ -84,7 +96,9 @@ Anatomy of an sf object:
 * CRS = Coordinate reference system, tells you the projection (more on that below)
 * Dataframe (equivalent to an attribute table in a desktop GIS)
 
-### Check Projection
+## Reproject vector layer
+
+Check initial projection
 
 ``` r
 st_crs(watersheds)
@@ -105,7 +119,7 @@ Useful EPSG codes to know when working with California-based data
   - NAD 83 UTM Zone 10 N (most of CA)      26910       
   - WGS 84 UTM Zone 10 N (most of CA)      32610        
 
-## Reproject sf object using `st_transform`
+### Reproject sf object using `st_transform`
 
 ``` r
 watersheds <- st_transform(watersheds, crs = 26910)
