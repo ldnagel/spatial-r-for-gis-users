@@ -9,12 +9,12 @@
 * [Working with raster data](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial#rasters)
   - [Extract raster to features](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial#extract-raster-to-feature)
   - [Converting and modifying resulting feature layers](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial#converting-and-modifying-feature-layers)
-* [Writing outputs to local drive]()
-  - [Shapefiles]()
-  - [.csv files]()
-* [A quick peek at mapping in R]()
-  - [Interactive maps]()
-  - [Static maps]()
+* [Writing outputs to local drive]
+  - [Shapefiles]
+  - [.csv files]
+* [A quick peek at mapping in R]
+  - [Interactive maps]
+  - [Static maps]
 
 ## Setup
 
@@ -424,6 +424,177 @@ plot(ws_inputs["Dev_km2"])
 
 # [insert screenshot here]
 
+
+
+## Writing Out Files 
+
+One of the major advantages of GIS in R: you can do a long series of modifications on a shapefile and in the end you only have the original file and a single output outside of the R code that can be used in other GIS programs.
+
+### Writing out shapefiles
+
+Go back to your project folder, either in the RStudio project pane or in your local file manager (File Explorer in Windows, Finder on MacOS, etc)
+
+Create a new folder called "output" at the same level as the data folder
+* Data management best practices: separate your data inputs and outputs (keep raw data raw!)
+
+``` r
+fpo <- paste0(getwd(), "/output")
+fpo <- "output"
+fpo <- paste0(here::here(), "/output")    # here() points to the project directory even in .Rmd, not going to do this live
+
+st_write(ws_inputs, dsn = fpo, "Tahoe_inputs_H12", overwrite = T, append = F, driver = "Esri Shapefile")  
+```
+
+Check your output folder
+* Because the output path was to a folder, it will write out a shapefile
+* If the output path points to an ESRI geodatabase (dsn = "filepath/geodatabase.gdb"), it will create a feature layer inside that gdb
+
+### Writing out dataframes to csv files
+
+Convert your sf object to a dataframe
+
+```{r}
+ws_inputs_df <- st_drop_geometry(ws_inputs)
+```
+
+Write out the dataframe to .csv
+
+```{r}
+write_csv(ws_inputs_df, paste0(fpo, "/Tahoe_inputs_H12.csv"))
+```
+
+
+# Making maps
+
+## Interactive maps
+
+You can do some pretty amazing things with interactive maps in R without much effort. If you're familiar with leaflet, that mapview package we were using is a wrapper for the package that translates R commands into leaflet javascript under the hood. Very customizable.
+
+```{r}
+mapview(ws_inputs, zcol = "Dev_km2")
+```
+
+### Change default basemap
+
+Check the list of basemaps (gives you a list to copy/paste).  
+
+```{r}
+mapviewOptions() 
+```
+
+Change basemap order to change which basemap displays by default. 
+
+```{r}
+basemaps <-  c("Esri.WorldImagery", "CartoDB.Positron", "CartoDB.DarkMatter", "OpenStreetMap",  "OpenTopoMap")
+mapview(ws_inputs, zcol = "Dev_km2", map.types=basemaps)
+```
+
+# [insert screenshot here]
+
+Mapview is ultimately based on [Leaflet](https://leafletjs.com/). You can find a list of additional supported basemaps [here](http://leaflet-extras.github.io/leaflet-providers/preview/). 
+
+Add some other useful basemaps to our list, get rid of the ones that don't have much detail in our focal area. 
+
+```{r}
+basemaps <- c("Stamen.TonerLite", "OpenStreetMap", "Esri.WorldImagery",
+              "Esri.WorldTopoMap","Esri.WorldGrayCanvas")    # make this list and save immediately
+
+
+mapview(ws_inputs, zcol = "Dev_km2", map.types=basemaps)
+```
+
+# [insert screenshot here]
+
+Change basemap list order to change which shows up first and change the legend label.
+
+```{r}
+basemaps2 <- c("Esri.WorldTopoMap", "Stamen.TonerLite", "OpenStreetMap", "Esri.WorldImagery",
+              "Esri.WorldGrayCanvas")   
+mapview(ws_inputs, zcol = "Dev_km2", map.types=basemaps2, layer.name = "Tahoe Basin Development")
+```
+
+# [insert screenshot here]
+
+For other ways to customize your interactive map, explore the options within the package (enter `?mapview` and `?mapviewOptions()` in the console), and check the [mapview documentation](https://r-spatial.github.io/mapview/reference/index.html).
+
+## Static Maps
+
+At this point I'll say that you can make some amazing maps in R once you get past baseplot, but the learning curve can be steep. If you're just starting out with R but you have a lot of practice in QGIS or ArcGIS layouts, most efficient thing to do is import your output shapefile into your favorite desktop interface, where you can micromanage your label positions without needing to get really good at fiddling with `ggplot()`. This is especially true if you don't know what `ggplot()` is. On the other hand, if you do know what `ggplot()` is and/or if you enjoy fiddling with `ggplot()` you can probably make a decent, publication-friendly map relatively quickly. 
+
+### Static maps with base `plot()`
+
+Base R's `plot()` function is somewhat customizable. You can add titles, change axis label size, etc. 
+
+```{r}
+plot(ws_inputs["Dev_km2"], main = "Tahoe Basin Watersheds: Urbanization Index") 
+```
+
+# [insert image here]
+
+We could try to do things like rotate the legend text and name the legend, but working with legends in base plot isn't very intuitive
+
+### Static maps with ggplot()
+
+```{r}
+ggplot(ws_inputs) +
+  geom_sf()                 # Just like you'd call geom_points() or geom_lines()
+```
+
+# [insert image here]
+
+Add axis labels just as you would for a graph:
+
+```{r}
+ggplot(ws_inputs) +
+  geom_sf() +                                  
+  labs(x = "Longitude", y = "Latitude", title = "Tahoe Basin Watersheds", subtitle = "Urbanization Index") 
+```
+
+# [insert image here]
+
+Again, the language for fixing colors, sizes (aesthetics) is the same for sf objects and regular dataframes:
+
+```{r}
+ggplot(ws_inputs) +
+  geom_sf(aes(fill = Dev_km2)) +                  # Up here add in aesthetics, again, same as graphing       
+  labs(x = "Longitude", y = "Latitude", 
+       title = "Tahoe Basin Watersheds", subtitle = "Urbanization Index")  +  # Add a plus sign at the end here
+  scale_fill_viridis_c()                                                      # Add a color ramp
+```
+
+# [insert image here]
+
+Continue to tweak design: 
+
+```{r}
+ggplot(ws_inputs) +
+  geom_sf(aes(fill = Dev_km2)) +                       
+  labs(x = "Longitude", y = "Latitude", 
+       title = "Tahoe Basin Watersheds", subtitle = "Urbanization Index") + 
+  scale_fill_viridis_c("Intensity-Weighted Area (km2)", option = "plasma") +    # Add legend title, change colors, add plus sign
+  theme_bw()                                                                    # Add theme
+```
+
+### Other static mapping packages
+
+* `cowplot` is a great package for arranging multiple maps and figures.
+  - You can even make inset maps (https://ryanpeek.org/mapping-in-R-workshop/vig_making_inset_maps.html#inset_maps)
+* `tmap` has a similar structure to mapping in `ggplot2()` but with slightly more publication-friendly defaults. It also has interactive capabilities.
+* `cartography` package has a lot of useful thematic map options (chloropleth maps, dot density maps, variouslegend options, classification (set raster cateogory breaks through various methods), etc.
+
+
+## Bonus Useful Function
+
+To view a list of feature classes in a geodatabase without opening it in a graphical GIS (Arc/QGIS):
+
+```{r}
+library(rgdal)
+gdb <- "filepath/file.gdb"        # Edit this filepath to one that points to a .gdb on your local disk
+ogrListLayers(gdb)
+```
+
+
+# See [this list](https://github.com/ldnagel/spatial-r-for-gis-users#spatial-r-resources) for more spatial R resources
 
 
 
