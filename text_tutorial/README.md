@@ -1,5 +1,7 @@
 # Under construction, pardon the mess
 
+# Tutorial Overview
+
 * [Setup](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/text_tutorial/README.md#setup)
 * [Working with vector data](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/text_tutorial/README.md#working-with-vector-data)
   - [Reproject vector layer](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial#reproject-vector-layer)
@@ -72,6 +74,8 @@ library(mapview)
 
 * Mapview is great for quick checks of your data (you can pan and zoom like graphical GIS systems/google maps)
 * You can also use it to create customized interactive maps that you can then share/post online
+
+[Back to the top](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/text_tutorial/README.md#tutorial-overview)
 
 # Working with vector data 
 
