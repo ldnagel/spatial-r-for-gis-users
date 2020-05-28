@@ -2,13 +2,14 @@
 
 * [Setup](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/text_tutorial/README.md#setup)
 * [Working with vector data](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/text_tutorial/README.md#working-with-vector-data)
-  - [Import and examine vector layer](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/text_tutorial/README.md#import-and-examine-vector-layer)
   - [Reproject vector layer](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial#reproject-vector-layer)
   - [Explore attribute table](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial#explore-the-attribute-table)
   - [Quick plots](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial#plot-to-get-a-visual-the-sf-object-baseplot-function)
   - [Spatial operations](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial#spatial-operations)
 * [Working with raster data](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial#rasters)
   - [Extract raster to features](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial#extract-raster-to-feature)
+  - [Converting and modifying resulting feature layers]()
+* [A quick peek at mapping in R]()
 
 ## Setup
 
@@ -358,11 +359,18 @@ ws_dev_sp <- extract(nlcd_dev,      # raster
                      df = TRUE,     # keep the dataframe associated with the sp object/feature layer
                      sp = TRUE)     # add the extracted values to the input sp object/feature layer
 ws_dev_sp  
+```
 
-# Convert the sp object back to an sf object
+## Converting and modifying feature layers
+
+### Convert the sp object back to an sf object
+
+``` r
 ws_dev_sf <- st_as_sf(ws_dev_sp)
 ws_dev_sf
 ```
+
+### Modify and simplify sf objects
 
 Simplify the attribute table
 
