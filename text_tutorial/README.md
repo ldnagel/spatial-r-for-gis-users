@@ -1,14 +1,14 @@
 # Under construction, pardon the mess
 
-* [Setup]()
-* [Working with vector data]()
-  - [Import and examine vector layer]()
-  - [Reproject vector layer]()
-  - [Explore attribute table]()
-  - [Quick plots]()
-  - [Spatial operations]()
-* [Working with raster data]()
-  - [Extract]
+* [Setup](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/text_tutorial/README.md#setup)
+* [Working with vector data](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/text_tutorial/README.md#working-with-vector-data)
+  - [Import and examine vector layer](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/text_tutorial/README.md#import-and-examine-vector-layer)
+  - [Reproject vector layer](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/text_tutorial/README.md#)
+  - [Explore attribute table](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/text_tutorial/README.md#)
+  - [Quick plots](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/text_tutorial/README.md#)
+  - [Spatial operations](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/text_tutorial/README.md#)
+* [Working with raster data](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/text_tutorial/README.md#)
+  - [Extract](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/text_tutorial/README.md#)
 
 ## Setup
 
