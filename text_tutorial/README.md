@@ -2,8 +2,8 @@
 
 # Tutorial Overview
 
-* [Setup](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/text_tutorial/README.md#setup)
-* [Working with vector data](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/text_tutorial/README.md#working-with-vector-data)
+* [Setup](#setup)
+* [Working with vector data](#working-with-vector-data)
   - [Reproject vector layer](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial#reproject-vector-layer)
   - [Explore attribute table](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial#explore-the-attribute-table)
   - [Quick plots](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial#plot-to-get-a-visual-the-sf-object-baseplot-function)
