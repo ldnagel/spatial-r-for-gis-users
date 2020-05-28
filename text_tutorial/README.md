@@ -601,7 +601,9 @@ ggplot(ws_inputs) +
 
 [Back to the top](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/text_tutorial/README.md#tutorial-overview)
 
-# See [this list](https://github.com/ldnagel/spatial-r-for-gis-users#spatial-r-resources) for more spatial R resources
+# More spatial R resources
+
+See [this list](https://github.com/ldnagel/spatial-r-for-gis-users#spatial-r-resources) (takes you back to the main page of the repository)
 
 
 
