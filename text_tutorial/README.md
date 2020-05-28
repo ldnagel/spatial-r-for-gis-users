@@ -91,7 +91,7 @@ fp <- paste0(here::here(), "/data")    # here() points to the project directory 
 list.files(fp)
 ```
 
-As an aside, if you're trying to import feature classes in a geodatabase or figure out what feature layers are inside of the geodatabase without opening it in a graphical GIS (Arc/QGIS), you'll need an additional function:
+As an aside, if you're trying to import feature classes in a geodatabase or figure out what feature layers are inside of the geodatabase without opening it in a graphical GIS (Arc/QGIS), you can use the function `ogrListLayers()` from the `rgdal` package:
 
 ``` r
 gdb <- "filepath/file.gdb"        # Edit this filepath to one that points to a .gdb on your local disk
