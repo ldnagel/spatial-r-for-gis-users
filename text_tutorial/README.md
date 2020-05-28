@@ -89,6 +89,14 @@ To navigate to the "data" folder in the project folder:
 fp <- "data" 
 fp <- paste0(getwd(), "/data")         # pastes "/data" onto the end of the `getwd()` output
 fp <- paste0(here::here(), "/data")    # here() points to the project directory even in .Rmd
+list.files(fp)
+```
+
+As an aside, if you're trying to import feature classes in a geodatabase or figure out what feature layers are inside of the geodatabase without opening it in a graphical GIS (Arc/QGIS), you'll need an additional function:
+
+``` r
+gdb <- "filepath/file.gdb"        # Edit this filepath to one that points to a .gdb on your local disk
+rgdal::ogrListLayers(gdb)
 ```
 
 Load the shapefile to object `watersheds` and check the output
@@ -296,6 +304,7 @@ mapview(streams_clean)
 
 # [insert screenshot here]
 
+[Back to the top](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/text_tutorial/README.md#tutorial-overview)
 
 # Rasters
 
@@ -371,6 +380,8 @@ ws_dev_sp <- extract(nlcd_dev,      # raster
 ws_dev_sp  
 ```
 
+[Back to the top](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/text_tutorial/README.md#tutorial-overview)
+
 ## Converting and modifying feature layers
 
 ### Convert the sp object back to an sf object
@@ -429,7 +440,7 @@ plot(ws_inputs["Dev_km2"])
 
 # [insert screenshot here]
 
-
+[Back to the top](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/text_tutorial/README.md#tutorial-overview)
 
 ## Writing Out Files 
 
@@ -468,6 +479,7 @@ Write out the dataframe to .csv
 write_csv(ws_inputs_df, paste0(fpo, "/Tahoe_inputs_H12.csv"))
 ```
 
+[Back to the top](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/text_tutorial/README.md#tutorial-overview)
 
 # Making maps
 
@@ -587,17 +599,7 @@ ggplot(ws_inputs) +
 * `tmap` has a similar structure to mapping in `ggplot2()` but with slightly more publication-friendly defaults. It also has interactive capabilities.
 * `cartography` package has a lot of useful thematic map options (chloropleth maps, dot density maps, variouslegend options, classification (set raster cateogory breaks through various methods), etc.
 
-
-## Bonus Useful Function
-
-To view a list of feature classes in a geodatabase without opening it in a graphical GIS (Arc/QGIS):
-
-``` r
-library(rgdal)
-gdb <- "filepath/file.gdb"        # Edit this filepath to one that points to a .gdb on your local disk
-ogrListLayers(gdb)
-```
-
+[Back to the top](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/text_tutorial/README.md#tutorial-overview)
 
 # See [this list](https://github.com/ldnagel/spatial-r-for-gis-users#spatial-r-resources) for more spatial R resources
 
