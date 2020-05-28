@@ -17,7 +17,7 @@
 * [A quick overview of mapping in R](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial#making-maps)
   - [Interactive maps](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial#interactive-maps)
   - [Static maps](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial#static-maps)
- * [More spatial R resources](https://github.com/ldnagel/spatial-r-for-gis-users/#resources)
+ * [More spatial R resources](https://github.com/ldnagel/spatial-r-for-gis-users/#spatial-r-resources)
 
 ## Setup
 
@@ -234,7 +234,7 @@ mapview(watersheds, zcol = "HUType")   # To display a field like we did with bas
 We'll come back to mapping later
 
 
-# Spatial Operations
+# Spatial operations
 
 Load in streams layer
 
@@ -306,7 +306,7 @@ mapview(streams_clean)
 
 [Back to the top](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/text_tutorial/README.md#tutorial-overview)
 
-# Rasters
+# Working with raster data
 
 One of the major ways we think about land and water interacting on the aquatic side is terrestrial inputs into aquatic systems such as nutrients and sediments. 
 
@@ -442,7 +442,7 @@ plot(ws_inputs["Dev_km2"])
 
 [Back to the top](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/text_tutorial/README.md#tutorial-overview)
 
-## Writing Out Files 
+# Writing out files 
 
 One of the major advantages of GIS in R: you can do a long series of modifications on a shapefile and in the end you only have the original file and a single output outside of the R code that can be used in other GIS programs.
 
