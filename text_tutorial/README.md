@@ -19,7 +19,7 @@
 
 ## Setup
 
-RStudio setup
+#### RStudio setup
 
 * Make a new project in RStudio (select New Project from the File dropdown menu)
 * Make a folder called "data" inside the project folder (using your file explorer)
@@ -27,7 +27,7 @@ RStudio setup
   * Once you've downloaded and unzipped the file, copy and paste the files into the "data" folder
 * Open a new script, save it in inside the project folder 
 
-Script setup
+#### Script setup
 
 Packages are like plugins--install and load to get increase functionality (or at least more functions). In order to use functions in a package, we need to load the package library
 
@@ -454,13 +454,13 @@ Check your output folder
 
 Convert your sf object to a dataframe
 
-```{r}
+``` r
 ws_inputs_df <- st_drop_geometry(ws_inputs)
 ```
 
 Write out the dataframe to .csv
 
-```{r}
+``` r
 write_csv(ws_inputs_df, paste0(fpo, "/Tahoe_inputs_H12.csv"))
 ```
 
@@ -471,7 +471,7 @@ write_csv(ws_inputs_df, paste0(fpo, "/Tahoe_inputs_H12.csv"))
 
 You can do some pretty amazing things with interactive maps in R without much effort. If you're familiar with leaflet, that mapview package we were using is a wrapper for the package that translates R commands into leaflet javascript under the hood. Very customizable.
 
-```{r}
+``` r
 mapview(ws_inputs, zcol = "Dev_km2")
 ```
 
@@ -479,15 +479,15 @@ mapview(ws_inputs, zcol = "Dev_km2")
 
 Check the list of basemaps (gives you a list to copy/paste).  
 
-```{r}
+``` r
 mapviewOptions() 
 ```
 
 Change basemap order to change which basemap displays by default. 
 
-```{r}
+``` r
 basemaps <-  c("Esri.WorldImagery", "CartoDB.Positron", "CartoDB.DarkMatter", "OpenStreetMap",  "OpenTopoMap")
-mapview(ws_inputs, zcol = "Dev_km2", map.types=basemaps)
+mapview(ws_inputs, zcol = "Dev_km2", map.types = basemaps)
 ```
 
 # [insert screenshot here]
@@ -496,22 +496,22 @@ Mapview is ultimately based on [Leaflet](https://leafletjs.com/). You can find a
 
 Add some other useful basemaps to our list, get rid of the ones that don't have much detail in our focal area. 
 
-```{r}
+``` r
 basemaps <- c("Stamen.TonerLite", "OpenStreetMap", "Esri.WorldImagery",
               "Esri.WorldTopoMap","Esri.WorldGrayCanvas")    # make this list and save immediately
 
 
-mapview(ws_inputs, zcol = "Dev_km2", map.types=basemaps)
+mapview(ws_inputs, zcol = "Dev_km2", map.types = basemaps)
 ```
 
 # [insert screenshot here]
 
 Change basemap list order to change which shows up first and change the legend label.
 
-```{r}
+``` r
 basemaps2 <- c("Esri.WorldTopoMap", "Stamen.TonerLite", "OpenStreetMap", "Esri.WorldImagery",
               "Esri.WorldGrayCanvas")   
-mapview(ws_inputs, zcol = "Dev_km2", map.types=basemaps2, layer.name = "Tahoe Basin Development")
+mapview(ws_inputs, zcol = "Dev_km2", map.types = basemaps2, layer.name = "Tahoe Basin Development")
 ```
 
 # [insert screenshot here]
@@ -526,7 +526,7 @@ At this point I'll say that you can make some amazing maps in R once you get pas
 
 Base R's `plot()` function is somewhat customizable. You can add titles, change axis label size, etc. 
 
-```{r}
+``` r
 plot(ws_inputs["Dev_km2"], main = "Tahoe Basin Watersheds: Urbanization Index") 
 ```
 
@@ -536,7 +536,7 @@ We could try to do things like rotate the legend text and name the legend, but w
 
 ### Static maps with ggplot()
 
-```{r}
+``` r
 ggplot(ws_inputs) +
   geom_sf()                 # Just like you'd call geom_points() or geom_lines()
 ```
@@ -545,7 +545,7 @@ ggplot(ws_inputs) +
 
 Add axis labels just as you would for a graph:
 
-```{r}
+``` r
 ggplot(ws_inputs) +
   geom_sf() +                                  
   labs(x = "Longitude", y = "Latitude", title = "Tahoe Basin Watersheds", subtitle = "Urbanization Index") 
@@ -555,7 +555,7 @@ ggplot(ws_inputs) +
 
 Again, the language for fixing colors, sizes (aesthetics) is the same for sf objects and regular dataframes:
 
-```{r}
+``` r
 ggplot(ws_inputs) +
   geom_sf(aes(fill = Dev_km2)) +                  # Up here add in aesthetics, again, same as graphing       
   labs(x = "Longitude", y = "Latitude", 
@@ -567,7 +567,7 @@ ggplot(ws_inputs) +
 
 Continue to tweak design: 
 
-```{r}
+``` r
 ggplot(ws_inputs) +
   geom_sf(aes(fill = Dev_km2)) +                       
   labs(x = "Longitude", y = "Latitude", 
@@ -588,7 +588,7 @@ ggplot(ws_inputs) +
 
 To view a list of feature classes in a geodatabase without opening it in a graphical GIS (Arc/QGIS):
 
-```{r}
+``` r
 library(rgdal)
 gdb <- "filepath/file.gdb"        # Edit this filepath to one that points to a .gdb on your local disk
 ogrListLayers(gdb)
