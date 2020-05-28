@@ -9,12 +9,13 @@
 * [Working with raster data](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial#rasters)
   - [Extract raster to features](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial#extract-raster-to-feature)
   - [Converting and modifying resulting feature layers](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial#converting-and-modifying-feature-layers)
-* [Writing outputs to local drive]
-  - [Shapefiles]
-  - [.csv files]
-* [A quick peek at mapping in R]
-  - [Interactive maps]
-  - [Static maps]
+* [Writing outputs to local drive](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial#writing-out-files)
+  - [Shapefiles](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial#writing-out-shapefiles)
+  - [.csv files](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial#writing-out-dataframes-to-csv-files)
+* [A quick overview of mapping in R](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial#making-maps)
+  - [Interactive maps](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial#interactive-maps)
+  - [Static maps](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial#static-maps)
+ * [More spatial R resources](https://github.com/ldnagel/spatial-r-for-gis-users/#resources)
 
 ## Setup
 
