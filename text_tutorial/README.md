@@ -8,8 +8,13 @@
   - [Spatial operations](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial#spatial-operations)
 * [Working with raster data](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial#rasters)
   - [Extract raster to features](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial#extract-raster-to-feature)
-  - [Converting and modifying resulting feature layers]()
+  - [Converting and modifying resulting feature layers](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial#converting-and-modifying-feature-layers)
+* [Writing outputs to local drive]()
+  - [Shapefiles]()
+  - [.csv files]()
 * [A quick peek at mapping in R]()
+  - [Interactive maps]()
+  - [Static maps]()
 
 ## Setup
 
