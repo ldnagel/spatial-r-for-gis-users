@@ -187,7 +187,7 @@ Various functions give you easy access to the coordinates
 * For example, if you have a point dataset and you want to put Easting into a single attribute field, use `st_coordinates` and isolate the Easting column
 
 ``` r
-st_coordinates(watersheds)
+st_coordinates(watersheds)[10,]       # only print the top 10 rows
 class(st_coordinates(watersheds))     # matrices are similar to dataframes, easy to combine
 ```
 
