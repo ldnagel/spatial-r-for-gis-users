@@ -198,19 +198,19 @@ class(st_coordinates(watersheds))     # matrices are similar to dataframes, easy
 plot(watersheds)                # Plots every attribute field
 ```
 
-![](TT01_plot-watersheds.png)
+![](/figs/TT01_plot-watersheds.png)
 
 ``` r
 plot(st_geometry(watersheds))   # Plots just the vector geometry
 ```
 
-![](TT02_plot-watersheds-geometry.png)
+![](/figs/TT02_plot-watersheds-geometry.png)
 
 ``` r
 plot(watersheds$geometry)       # Plots just the vector geometry (simpler)
 ```
 
-![](TT02_plot-watersheds-geometry.png)
+![](/figs/TT02_plot-watersheds-geometry.png)
 
 "Sticky geometries" allow you to plot one field at a time: as we saw above, when you index a single field using `dataframe["column_name"]`, the geometry column also comes along
 
@@ -218,19 +218,19 @@ plot(watersheds$geometry)       # Plots just the vector geometry (simpler)
 plot(watersheds["HUType"])     # W = Waterbody, S = Standard, F = Frontal
 ```
 
-![](TT03_plot-watersheds-hutype.png)
+![](/figs/TT03_plot-watersheds-hutype.png)
 
 ``` r
 mapview(watersheds)
 ```
 
-![](TT04_mapview-watersheds-hutype.png)
+![](/figs/TT04_mapview-watersheds-hutype.png)
 
 ``` r
 mapview(watersheds, zcol = "HUType")   # To display a field like we did with baseplot
 ```
 
-![](TT05_mapview-watersheds-hutype.png)
+![](/figs/TT05_mapview-watersheds-hutype.png)
 
 We'll come back to mapping later
 
@@ -253,7 +253,7 @@ Let's just look at the streams in two of the northern watersheds
 mapview(watersheds)    # Hover over the polygons to get watershed ID
 ```
 
-![](TT06_mapview-watersheds-id-lookup.png)
+![](/figs/TT06_mapview-watersheds-id-lookup.png)
 
 ``` r
 ws_north <- watersheds[watersheds$ID == 99 | watersheds$ID == 100,]     # Filter using indexing
@@ -266,7 +266,7 @@ Use `mapview()` or `plot()` to do a quick visual check
 mapview(ws_north)                  # quick check to make sure that did what I thought it did
 ```
 
-![](TT07_mapview-wsnorth.png)
+![](/figs/TT07_mapview-wsnorth.png)
 
 ### Filter by location (not joining attributes)
 
@@ -292,7 +292,7 @@ Check the new sf object
 mapview(streams_north)                     
 ```
 
-![](TT08_mapview-streamsnorth.png)
+![](/figs/TT08_mapview-streamsnorth.png)
 
 You can make many intermediate objects without needing to export/create new files until the end
 
@@ -305,7 +305,7 @@ streams_clean <- st_intersection(streams_north, ws_north)
 mapview(streams_clean)
 ```
 
-![](TT09_mapview-streamsclean.png)
+![](/figs/TT09_mapview-streamsclean.png)
 
 [Back to the top](https://github.com/ldnagel/spatial-r-for-gis-users/blob/master/text_tutorial/README.md#tutorial-overview)
 
@@ -340,7 +340,7 @@ nlcd_dev <- raster(fpr)                      # Load raster to object
 mapview(nlcd_dev)                            # Mapview resamples raster to reduce resolution
 ```
 
-![](TT10_mapview-nlcd-input.png)
+![](/figs/TT10_mapview-nlcd-input.png)
 
 This should be a binary raster--why are there multiple values (see the edges of the blocks of developed blocks). Mapview resamples the raster to reduce the resolution so the data displays quickly. 
 
@@ -425,7 +425,7 @@ What have we created?
 plot(ws_inputs["Dev_km2"])
 ```
 
-![](TT11_plot-wsinputs-devkm2.png)
+![](/figs/TT11_plot-wsinputs-devkm2.png)
 
 There isn't really development in the lake, let's take it out of there.
 
@@ -434,7 +434,7 @@ ws_inputs <- ws_inputs[-5,]     # Delete by row index
 plot(ws_inputs["Dev_km2"])
 ```
 
-![](TT12_plot-wsinputs-devkm2-nolake.png)
+![](/figs/TT12_plot-wsinputs-devkm2-nolake.png)
 
 That's better.
 
@@ -489,7 +489,7 @@ You can do some pretty amazing things with interactive maps in R without much ef
 mapview(ws_inputs, zcol = "Dev_km2")
 ```
 
-![](TT13_mapview-wsinputs-devkm2-nolake.png)
+![](/figs/TT13_mapview-wsinputs-devkm2-nolake.png)
 
 ### Change default basemap
 
@@ -506,7 +506,7 @@ basemaps <-  c("Esri.WorldImagery", "CartoDB.Positron", "CartoDB.DarkMatter", "O
 mapview(ws_inputs, zcol = "Dev_km2", map.types = basemaps)
 ```
 
-![](TT14_mapview-wsinputs-basemapchange1.png)
+![](/figs/TT14_mapview-wsinputs-basemapchange1.png)
 
 Mapview is ultimately based on [Leaflet](https://leafletjs.com/). You can find a list of additional supported basemaps [here](http://leaflet-extras.github.io/leaflet-providers/preview/). 
 
@@ -520,7 +520,7 @@ basemaps <- c("Stamen.TonerLite", "OpenStreetMap", "Esri.WorldImagery",
 mapview(ws_inputs, zcol = "Dev_km2", map.types = basemaps)
 ```
 
-![](TT15_mapview-wsinputs-basemapchange2.png)
+![](/figs/TT15_mapview-wsinputs-basemapchange2.png)
 
 Change basemap list order to change which shows up first and change the legend label.
 
@@ -530,7 +530,7 @@ basemaps2 <- c("Esri.WorldTopoMap", "Stamen.TonerLite", "OpenStreetMap", "Esri.W
 mapview(ws_inputs, zcol = "Dev_km2", map.types = basemaps2, layer.name = "Tahoe Basin Development")
 ```
 
-![](TT16_mapview-wsinputs-basemapchange3.png)
+![](/figs/TT16_mapview-wsinputs-basemapchange3.png)
 
 For other ways to customize your interactive map, explore the options within the package (enter `?mapview` and `?mapviewOptions()` in the console), and check the [mapview documentation](https://r-spatial.github.io/mapview/reference/index.html).
 
@@ -546,7 +546,7 @@ Base R's `plot()` function is somewhat customizable. You can add titles, change 
 plot(ws_inputs["Dev_km2"], main = "Tahoe Basin Watersheds: Urbanization Index") 
 ```
 
-![](TT17_plot-mod1.png)
+![](/figs/TT17_plot-mod1.png)
 
 We could try to do things like rotate the legend text and name the legend, but working with legends in base plot isn't very intuitive
 
@@ -557,7 +557,7 @@ ggplot(ws_inputs) +
   geom_sf()                 # Just like you'd call geom_points() or geom_lines()
 ```
 
-![](TT18_ggplot-mod1.png)
+![](/figs/TT18_ggplot-mod1.png)
 
 Add axis labels just as you would for a graph:
 
@@ -567,7 +567,7 @@ ggplot(ws_inputs) +
   labs(x = "Longitude", y = "Latitude", title = "Tahoe Basin Watersheds", subtitle = "Urbanization Index") 
 ```
 
-![](TT19_ggplot-mod2.png)
+![](/figs/TT19_ggplot-mod2.png)
 
 Again, the language for fixing colors, sizes (aesthetics) is the same for sf objects and regular dataframes:
 
@@ -579,7 +579,7 @@ ggplot(ws_inputs) +
   scale_fill_viridis_c()                                                      # Add a color ramp
 ```
 
-![](TT20_ggplot-mod3.png)
+![](/figs/TT20_ggplot-mod3.png)
 
 Continue to tweak design: 
 
@@ -592,7 +592,7 @@ ggplot(ws_inputs) +
   theme_bw()                                                                    # Add theme
 ```
 
-![](TT21_ggplot-mod4.png)
+![](/figs/TT21_ggplot-mod4.png)
 
 ### Other static mapping packages
 
