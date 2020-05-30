@@ -132,7 +132,8 @@ CRS = Coordinate Reference System
 
 Useful EPSG codes to know when working with California-based data
 
-* Projected Systems
+* Geographic Systems
+  - NAD 83                                 4269
   - WGS 84                                 4326          
 * Projected Systems
   - NAD 83 UTM Zone 10 N (most of CA)      26910       
