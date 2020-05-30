@@ -253,7 +253,7 @@ Let's just look at the streams in two of the northern watersheds
 mapview(watersheds)    # Hover over the polygons to get watershed ID
 ```
 
-![](/figs/TT06_mapview-watersheds-id-lookup.png)
+<img src="/figs/TT06_mapview-watersheds-id-lookup.png" width="82%">
 
 ``` r
 ws_north <- watersheds[watersheds$ID == 99 | watersheds$ID == 100,]     # Filter using indexing
