@@ -75,6 +75,8 @@ A great (and adorable) visual of how the sf package handles vectors: an attribut
 
 ## Resources
 
+Note: some of these are UC Davis-specific, but most are widely available
+
 ### Getting Started with R
 
 * Detailed walkthrough: https://rspatial.org/pdf/Rintro.pdf
