@@ -1,4 +1,3 @@
-# Under construction, pardon the mess
 
 # Tutorial Overview
 
