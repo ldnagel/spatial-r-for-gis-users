@@ -2,7 +2,7 @@
 
 ## Tutorials
 
-* Text-based tutorial (coming soon)
+* Text-based tutorial is [here](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/text_tutorial)
 * [Tutorial with code and video walkthrough](https://github.com/ldnagel/spatial-r-for-gis-users/tree/master/maptime_webinar): Recording of a (virtual) #MaptimeDavis Workshop (April 2020)
 
 ## Why use R for GIS?
