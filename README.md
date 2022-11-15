@@ -65,8 +65,8 @@ Two core spatial packages in R:
   * Adheres to [Open Geospatial Consortium](https://www.osgeo.org/partners/ogc/) Simple Features standard
   * Vector data structure focused around data frames (more intuitive for users familiar with common data manipulation workflows in R)
 
-<img src="[https://github.com/allisonhorst/stats-illustrations/blob/master/rstats-artwork/sf.png](https://github.com/allisonhorst/stats-illustrations/blob/main/rstats-artwork/sf.png]" 
-	title="Illustration entitled 's f: spatial data...simplified' depicting colorful fluffy critters taping shapes to an attribute table into a column labeled 'geometries' (and also onto themselves) with the caption 'sticky geometries, for people who love their maps (and sanity)'" width="500" />
+<img src="https://github.com/allisonhorst/stats-illustrations/blob/master/rstats-artwork/sf.png](https://github.com/allisonhorst/stats-illustrations/blob/main/rstats-artwork/sf.png" 
+	alt="Illustration entitled 's f: spatial data...simplified' depicting colorful fluffy critters taping shapes to an attribute table into a column labeled 'geometries' (and also onto themselves) with the caption 'sticky geometries, for people who love their maps (and sanity)'" width="500" />
 
 A great (and adorable) visual of how the sf package handles vectors: an attribute table with geometries (points, polygons, etc) that 'stick' to each row/feature. Artwork by [@allisonhorst](https://github.com/allisonhorst). 
 
